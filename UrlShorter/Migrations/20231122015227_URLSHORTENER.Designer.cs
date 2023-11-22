@@ -10,8 +10,8 @@ using UrlShorter.Data;
 namespace UrlShorter.Migrations
 {
     [DbContext(typeof(URLShortContext))]
-    [Migration("20231110022327_1")]
-    partial class _1
+    [Migration("20231122015227_URLSHORTENER")]
+    partial class URLSHORTENER
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,7 +71,7 @@ namespace UrlShorter.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Lautaro",
+                            Name = "Gaspar",
                             Password = "password",
                             RolUser = 0
                         },

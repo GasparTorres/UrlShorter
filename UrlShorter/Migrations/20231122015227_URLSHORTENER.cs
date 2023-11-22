@@ -1,12 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
+#nullable disable
+
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
 namespace UrlShorter.Migrations
 {
-    
-    public partial class _1 : Migration
+    /// <inheritdoc />
+    public partial class URLSHORTENER : Migration
     {
-        
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -80,7 +83,7 @@ namespace UrlShorter.Migrations
                 columns: new[] { "Id", "Name", "Password", "RolUser" },
                 values: new object[,]
                 {
-                    { 1, "Lautaro", "password", 0 },
+                    { 1, "Gaspar", "password", 0 },
                     { 2, "Jose", "password", 1 },
                     { 3, "Guest", "password", 2 }
                 });
@@ -106,7 +109,7 @@ namespace UrlShorter.Migrations
                 column: "IdUser");
         }
 
-        
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

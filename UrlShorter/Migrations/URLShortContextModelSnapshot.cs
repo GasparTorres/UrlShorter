@@ -68,7 +68,7 @@ namespace UrlShorter.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Lautaro",
+                            Name = "Gaspar",
                             Password = "password",
                             RolUser = 0
                         },
